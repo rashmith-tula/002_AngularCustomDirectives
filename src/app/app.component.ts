@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { enableBindings } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-root',
@@ -6,11 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  enable: boolean = false;
   title = 'customDirectives';
   flag: boolean = true;
   value: number = 2;
 
   onClick() {
     this.flag = !this.flag;
+  }
+
+  onDropDown() {
+    this.enable = !this.enable;
   }
 }

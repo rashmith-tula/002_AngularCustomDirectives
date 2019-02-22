@@ -16,6 +16,29 @@
   <p class="text-primary border border-warning md-2" *appUnless="flag">This is my custom structural directive</p>
   <p class="text-white border border-white md-2" *appUnless="!flag">`</p>
   <button class="btn btn-primary" (click)='onClick()'>Submit</button>
+  <div class="container mt-2">
+  <!-- <div class="btn-group" >
+      <button type="button" class="btn btn-primary dropdown-toggle" (click)="onDropDown()">
+        Manage <span class="caret"></span>
+      </button>
+      <div class="dropdown-menu" [ngClass]="{show: enable}">
+        <a class="dropdown-item" href="#">Edit</a>
+        <a class="dropdown-item" href="#">Save</a>
+        <a class="dropdown-item" href="#">Delete</a>
+      </div>
+  </div> -->
+
+  <div class="btn-group" appBtndropdown>
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        Manage 
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Edit</a>
+        <a class="dropdown-item" href="#">Save</a>
+        <a class="dropdown-item" href="#">Delete</a>
+      </div>
+  </div>
+  </div>
 </div>
 
 

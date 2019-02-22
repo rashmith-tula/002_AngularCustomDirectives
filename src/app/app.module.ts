@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { attrDirective } from './directives/attribute.directive';
 import { RendererDirective } from './directives/renderer.directive';
 import { DynamicDirective } from './directives/dynamic.directive';
-import { UnlessDirective } from './directives/unless.directive'
+import { UnlessDirective } from './directives/unless.directive';
+import { BtndropdownDirective } from './directives/btndropdown.directive'
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { UnlessDirective } from './directives/unless.directive'
     attrDirective,
     RendererDirective,
     DynamicDirective,
-    UnlessDirective
+    UnlessDirective,
+    BtndropdownDirective
   ],
   imports: [
     BrowserModule
