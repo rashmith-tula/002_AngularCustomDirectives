@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'customDirectives';
+  flag: boolean = true;
+  value: number = 2;
+
+  onClick() {
+    this.flag = !this.flag;
+  }
 }

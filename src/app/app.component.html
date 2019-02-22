@@ -7,7 +7,15 @@
   appDynamic
   defaultColor="#dee4ed"
   highlightColor="pink">This is my custom hostlistener renderer directive</p>
-  <button class="btn btn-primary">Submit</button>
+  <div [ngSwitch]="value">
+    <p class='text-primary' *ngSwitchCase="1"> Value is 1 </p>
+    <p class="text-primary" *ngSwitchCase="2"> Value is 2 </p>
+    <p class="text-primary" *ngSwitchCase="3"> Value is 3 </p>
+    <p class="text-primary" *ngSwitchDefault> Value is above 3 </p>
+  </div>
+  <p class="text-primary border border-warning md-2" *appUnless="flag">This is my custom structural directive</p>
+  <p class="text-white border border-white md-2" *appUnless="!flag">`</p>
+  <button class="btn btn-primary" (click)='onClick()'>Submit</button>
 </div>
 
 
